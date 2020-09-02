@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="-5 -5 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>ico-decision-tree</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4" transform="translate(-1172.000000, -677.000000)" fill="#fff" fill-rule="nonzero">
+            <g id="Angular-BPMN-+-Rectangle-+-ico-algorithm-+-ico-rule-+-ico-score-+-ico-support-+-ico-decision-tree-+-ico-decision-table-+-ico-variables-Mask" transform="translate(1132.000000, 163.000000)">
+                <g id="ico-decision-tree" transform="translate(40.000000, 514.000000)">
+                    <path d="M38.3985,14.7939375 L35.7497812,17.44275 L40.7724375,22.4654062 L35.1803437,22.4654062 C31.5151875,22.4654062 28.1971875,23.9777812 25.81575,26.4105 L25.81575,7.155 L30.9529687,12.2923125 L33.6016875,9.6435 L24,0.04190625 L14.3984063,9.64340625 L17.047125,12.2922187 L22.069875,7.26946875 L22.069875,26.4105 C19.6884375,23.9777812 16.3703438,22.4654062 12.7052813,22.4654062 L7.26403125,22.4654062 L12.2503125,17.4792187 L9.60159375,14.8304062 L0,24.4319063 L9.6015,34.0335 L12.2502187,31.3846875 L7.076625,26.2110937 L12.7050937,26.2110937 C17.86875,26.2110937 22.0696875,30.4119375 22.0696875,35.5756875 L22.0696875,47.9579062 L25.8155625,47.9579062 L25.8155625,35.575875 C25.8155625,30.412125 30.0165,26.2112812 35.1801562,26.2112812 L40.8869063,26.2112812 L35.7495938,31.3484062 L38.3983125,33.9972187 L48,24.395625 L38.3985,14.7939375 Z" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

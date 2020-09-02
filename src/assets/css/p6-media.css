@@ -1,0 +1,292 @@
+@media (min-width: 1921px) {
+  .top-tab .mat-tab-label-container {
+    margin-left: 11px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .search-bar {
+    width: 450px;
+  }
+  .execution-wrap {
+    width: 31%;
+  }
+  .mapping-header {
+    padding: 15px 40px;
+  }
+  .text-selected-secreen {
+    padding: 8px 0 0 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .partial-fixed-table.disbursment-document thead th:first-child,
+  .partial-fixed-table.disbursment-document tbody td:first-child,
+  .partial-fixed-table.disbursment-document thead th.fixed:nth-child(3),
+  .partial-fixed-table.disbursment-document thead td.fixed:nth-child(3) {
+    min-width: 160px;
+    width: 160px;
+    max-width: 160px;
+  }
+  .partial-fixed-table.disbursment-document thead th.fixed:nth-child(2),
+  .partial-fixed-table.disbursment-document tbody td.fixed:nth-child(2) {
+    left: 160px;
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+  }
+  .partial-fixed-table.disbursment-document thead th.fixed:nth-child(3),
+  .partial-fixed-table.disbursment-document tbody td.fixed:nth-child(3) {
+    left: 310px;
+  }
+  .overview-content .col-33 {
+    width: 100%;
+    padding-right: 0;
+  }
+  .flow-tab-wrap .mat-tab-header-pagination.mat-tab-header-pagination-before {
+    top: 0px;
+  }
+  .execution-wrap {
+    width: calc(100% / 3) !important;
+  }
+  .execution-wrap td.mat-cell:last-of-type,
+  .execution-wrap td.mat-footer-cell:last-of-type {
+    max-width: 244px !important;
+  }
+}
+
+@media (max-width: 980px) {
+  .login-section {
+    flex-direction: column;
+  }
+  .login-left {
+    background: none;
+  }
+  .execution-wrap {
+    width: 46%;
+  }
+  .copyright {
+    margin-top: 30px;
+    align-self: center;
+  }
+  .logo-wrap,
+  .user-wrap {
+    width: 50%;
+  }
+  .search-bar {
+    width: 350px;
+    margin-bottom: 30px;
+  }
+  .table-horizontal-scroll tbody {
+    overflow-x: scroll;
+  }
+  .login-left {
+    background: url("../../assets/images/img-login.jpg") no-repeat center bottom;
+    background-size: cover;
+  }
+  .login-right {
+    display: block;
+  }
+  .user-management-content {
+    top: 30px;
+  }
+  .execution-wrap {
+    width: calc(100% / 3.4) !important;
+  }
+  .execution-wrap td.mat-cell:last-of-type,
+  .execution-wrap td.mat-footer-cell:last-of-type {
+    max-width: 244px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed-table-wrap {
+    width: 50%;
+  }
+  .fixed-table-wrap th,
+  .fixed-table-wrap td {
+    width: 200px;
+  }
+  .fixed-table-wrap th:first-child,
+  .fixed-table-wrap td:first-child {
+    width: 100px;
+  }
+  .scroll-table-wrap {
+    margin-left: 50%;
+  }
+  .search-bar {
+    margin-left: 62px;
+  }
+  .subheader {
+    display: block;
+  }
+  .subheader-left,
+  .subheader-right {
+    width: 100%;
+  }
+  .subheader-left,
+  .subheader .sliderdiv {
+    margin: 10px;
+  }
+  .subheader .section-title,
+  .subheader .sliderdiv {
+    display: inline-block;
+  }
+  .small-vertical-table-wrapper .vertical-table-col.vertical-fixed-table-col {
+    width: 140px;
+    min-width: 140px;
+  }
+  .partial-fixed-table.disbursment-document thead th:first-child,
+  .partial-fixed-table.disbursment-document tbody td:first-child,
+  .partial-fixed-table.disbursment-document thead th.fixed:nth-child(3),
+  .partial-fixed-table.disbursment-document tbody td.fixed:nth-child(3),
+  .partial-fixed-table.disbursment-document thead th.fixed:nth-child(2),
+  .partial-fixed-table.disbursment-document tbody td.fixed:nth-child(2) {
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .partial-fixed-table.disbursment-document thead th.fixed:nth-child(2),
+  .partial-fixed-table.disbursment-document tbody td.fixed:nth-child(2) {
+    left: 100px;
+  }
+  .partial-fixed-table.disbursment-document thead th.fixed:nth-child(3),
+  .partial-fixed-table.disbursment-document tbody td.fixed:nth-child(3) {
+    left: 200px;
+  }
+  .uploaded-name {
+    padding: 0;
+  }
+  /*BPMN*/
+  #properties {
+    width: 190px;
+  }
+  .bre-popup-content {
+    width: 650px;
+  }
+  .overlay.ng-star-inserted {
+    overflow: auto;
+  }
+  .djs-palette .entry,
+  .djs-palette .djs-palette-toggle {
+    width: 35px !important;
+    height: 30px !important;
+    line-height: 25px !important;
+    cursor: default !important;
+    font-size: 24px !important;
+  }
+  .djs-palette.two-column.open {
+    width: min-content !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-content {
+    max-width: 320px;
+  }
+  .login-content h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .login-content h6 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .tab-slider-div {
+    margin: 0 9px;
+  }
+  .btn-group {
+    padding: 20px;
+  }
+  .p20 {
+    padding: 20px 5px;
+  }
+  .user-nav-link {
+    right: 4px;
+    top: -72px;
+  }
+  .search-bar {
+    top: 60px;
+    margin-left: 30px;
+    width: 75%;
+  }
+  .subheader .btn {
+    min-width: 108px;
+  }
+  .user-management-wrapper {
+    margin-top: 30px;
+  }
+  .user-management-content {
+    top: 44px;
+  }
+  .taskboard-wrapper .subheader {
+    margin-top: 30px;
+  }
+  .error-body {
+    height: 80vh;
+  }
+  .error-wrap {
+    padding: 0 15px;
+  }
+  .error-wrap p {
+    margin-top: 8px;
+  }
+  .error-wrap .explanation {
+    font-size: 15px;
+  }
+  .error-wrap h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .error-wrap h1.error-timeout {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .overview-content .col-50 {
+    padding: 20px 10px;
+  }
+  .overview-content .col-33 {
+    padding-right: 0px;
+  }
+  .btn-group .blue-btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .btn-group .blue-btn:last-child {
+    margin-right: 0;
+  }
+  .add-bank {
+    margin-top: -24px;
+  }
+  .mat-expansion-panel-header-title span {
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .btn,
+  .mat-raised-button {
+    min-width: 100px;
+    height: auto;
+    line-height: 18px;
+    padding: 4px 6px;
+  }
+  .partial-fixed-table thead th.fixed,
+  .partial-fixed-table thead td.fixed,
+  .partial-fixed-table tbody th.fixed,
+  .partial-fixed-table tbody td.fixed,
+  .partial-fixed-table thead th,
+  .partial-fixed-table tbody td {
+    position: static;
+  }
+  .partial-fixed-table.disbursment-document thead th:first-child,
+  .partial-fixed-table.disbursment-document tbody td:first-child,
+  .partial-fixed-table.disbursment-document thead th.fixed:nth-child(3),
+  .partial-fixed-table.disbursment-document tbody td.fixed:nth-child(3),
+  .partial-fixed-table.disbursment-document thead th.fixed:nth-child(2),
+  .partial-fixed-table.disbursment-document tbody td.fixed:nth-child(2) {
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    background: #fff;
+  }
+}

@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Helvetica Neue light";
+  src: url("HelveticaNeue-Light.woff2") format("woff2"),
+    url("HelveticaNeue-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue Roman";
+  src: url("HelveticaNeue-Roman.woff2") format("woff2"),
+    url("HelveticaNeue-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue MediumCond";
+  src: url("HelveticaNeue-MediumCond.woff2") format("woff2"),
+    url("HelveticaNeue-MediumCond.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url("MaterialIcons-Regular.eot");
+  src: url("MaterialIcons-Regular.woff2") format("woff2"),
+    url("MaterialIcons-Regular.woff") format("woff"),
+    url("MaterialIcons-Regular.ttf") format("truetype");
+}

@@ -1,0 +1,919 @@
+/* MAT Form fields Starts */
+
+/* .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 14px;
+} */
+
+table td .observation-textarea .mat-form-field-wrapper {
+  padding-bottom: 1px !important;
+}
+
+.white-box .retriveWrap mat-form-field {
+  display: inline-block !important;
+  width: 64%;
+}
+
+.white-box .verifiedCompany mat-form-field {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.white-box .verifiedCompany mat-form-field input {
+  max-width: calc(100% - 56px);
+}
+.gst-wrapper mat-form-field {
+  max-width: 200px;
+}
+.mat-form-field {
+  margin: 15px 0 0 0;
+  display: block !important;
+}
+
+.overview-content .mat-form-field {
+  margin-top: 0;
+}
+
+table .mat-form-field {
+  margin: 0;
+}
+
+.disabled .mat-form-field {
+  pointer-events: none;
+}
+
+.approving-auth .mat-form-field {
+  width: 92%;
+}
+
+.srno-field .mat-form-field {
+  width: 60px;
+}
+
+.form-row .mat-form-field {
+  margin: 0 0 25px;
+}
+
+.amount-right .right-text .mat-form-field {
+  text-align: right;
+}
+
+.mat-form-field-subscript-wrapper {
+  top: 100%;
+}
+
+.disbursment-document .mat-form-field-infix {
+  width: 174px;
+}
+
+.small-table .mat-form-field-infix {
+  width: 130px;
+}
+
+.disbursement-table .mat-form-field-infix {
+  width: auto !important;
+}
+
+.disbursement-service-tab .disabled.form-col .mat-input-element,
+.disbursement-service-tab .disabled.form-col .mat-select-value {
+  color: rgba(0, 0, 0, 0.38) !important;
+}
+
+.mat-form-field-label-wrapper {
+  top: -0.94375em;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-label,
+.mat-form-field.mat-form-field-invalid .mat-form-field-label {
+  color: #000;
+}
+
+.mat-form-field-should-float .mat-form-field-label {
+  font-size: 16px;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline,
+.mat-form-field.mat-focused .mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.mat-form-field.mat-form-field-invalid .mat-form-field-ripple.mat-accent {
+  background-color: rgb(68, 163, 223);
+}
+
+.vertical-table .mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.vertical-table
+  .mat-form-field.mat-form-field-invalid
+  .mat-form-field-ripple.mat-accent,
+.theme-table .mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.theme-table .mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.horizontal-table .mat-form-field.mat-form-field-invalid .mat-form-field-ripple,
+.horizontal-table
+  .mat-form-field.mat-form-field-invalid
+  .mat-form-field-ripple.mat-accent {
+  background-color: #f44336;
+}
+
+.mat-form-field-disabled .mat-form-field-underline,
+.disabled .mat-form-field-underline {
+  background-position: 0;
+  background-color: #949494 !important;
+  background-image: none !important;
+}
+
+.upload-hiddenfield .mat-form-field input,
+.upload-hiddenfield .mat-form-field-flex,
+.upload-hiddenfield .mat-form-field-underline {
+  display: none;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-underline {
+  bottom: 0.25em;
+}
+
+/* MAT Form fields Ends */
+
+/* MAT Radio Starts */
+
+.mat-radio-button {
+  margin-left: 10px;
+}
+
+.mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: #44a3df !important;
+}
+
+.whitebg-table .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+.whitebg-table .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+  background-color: #44a3df;
+}
+
+.square-checkbox.mat-checkbox-checked .mat-checkbox-checkmark {
+  display: none;
+}
+
+.square-checkbox.mat-checkbox-checked .mat-checkbox-background {
+  background: #ffffff !important;
+  border: 1px solid #000;
+}
+
+.square-checkbox.mat-checkbox-checked .mat-checkbox-background:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #000000;
+}
+
+.whitebg-table .mat-checkbox-frame {
+  border-width: 1px;
+}
+
+.form-dialog-content .mat-checkbox .mat-checkbox-layout {
+  white-space: normal !important;
+}
+
+/* MAT Radio Ends */
+
+/* MAT Button Starts */
+
+.mat-button-focus-overlay,
+.mat-button-ripple {
+  width: 0;
+}
+
+.mat-raised-button[disabled] {
+  border: 1px solid #949494 !important;
+}
+
+.mat-raised-button {
+  display: inline-block;
+  padding: 0 15px;
+  border-radius: 2px;
+  text-align: center;
+  text-transform: uppercase !important;
+  font-size: 14px;
+  font-family: "Helvetica Neue MediumCond";
+  height: 30px;
+  line-height: 30px;
+  color: #44a3df;
+  background: #fff;
+  border: 1px solid #44a3df;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.mat-raised-button.mat-primary[disabled],
+.mat-raised-button.mat-accent[disabled],
+.mat-raised-button.mat-warn[disabled],
+.mat-raised-button[disabled][disabled],
+.mat-fab.mat-primary[disabled],
+.mat-fab.mat-accent[disabled],
+.mat-fab.mat-warn[disabled],
+.mat-fab[disabled][disabled],
+.mat-mini-fab.mat-primary[disabled],
+.mat-mini-fab.mat-accent[disabled],
+.mat-mini-fab.mat-warn[disabled],
+.mat-mini-fab[disabled][disabled] {
+  cursor: not-allowed;
+  background-color: #fff;
+  color: #949494;
+}
+
+.mat-stroked-button[disabled][disabled]:hover {
+  color: #949494;
+  cursor: not-allowed;
+}
+
+/* MAT Button Ends  */
+
+/* MAT Input  Starts */
+
+textarea.mat-input-element {
+  padding-top: 20px !important;
+}
+
+.observation-textarea textarea.mat-input-element {
+  padding-top: 0px;
+  margin-top: 20px;
+}
+
+table td .observation-textarea textarea.mat-input-element {
+  margin-top: 0;
+  line-height: 16px;
+}
+
+.borrower-textarea textarea.mat-input-element {
+  height: 114px;
+  line-height: 16px;
+}
+
+.mat-input-element {
+  border: none !important;
+}
+
+table .mat-form-field-infix {
+  padding: 0px;
+  border-top: 0 none;
+}
+
+.rs-field .mat-form-field-should-float .mat-form-field-infix,
+.currencyIco.mat-form-field-should-float .mat-form-field-infix {
+  background: url(../images/icon-rupee.png) no-repeat left center;
+  padding-left: 10px;
+  background-size: 7px auto;
+  padding-top: 8px;
+}
+
+.percent-field .mat-input-element {
+  background: url(../images/percent.png) no-repeat right center;
+  background-size: 10px auto;
+}
+
+.amount-right .rs-field .mat-form-field-should-float .mat-input-element {
+  text-align: right;
+}
+
+.mat-input-prefix.mat-form-field-prefix span {
+  vertical-align: text-bottom;
+}
+
+/* MAT Input  Ends */
+
+/* MAT Tabs  Starts */
+
+.mat-tab-header {
+  z-index: 10;
+}
+
+.mat-tab-header,
+.mat-tab-nav-bar {
+  border-bottom: none !important;
+}
+
+.vertical-tab .mat-tab-header {
+  display: table-cell !important;
+  width: 30%;
+  background: #fff;
+  z-index: 999999999;
+  vertical-align: top;
+}
+
+.documents-tab .mat-tab-header {
+  margin-bottom: 20px;
+}
+
+.user-management-content .mat-tab-header {
+  z-index: unset;
+}
+
+.mat-elevation-z4 {
+  box-shadow: none !important;
+}
+
+.mat-tab-header-pagination-chevron {
+  border-color: #44a3df !important;
+}
+
+.mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron {
+  opacity: 0.5;
+}
+
+.inner-tab .vertical-tab .mat-tab-header-pagination {
+  display: none;
+  opacity: 0;
+}
+
+.inner-tab .mat-tab-labels {
+  position: relative;
+  margin-bottom: 1px;
+}
+
+.inner-tab .vertical-tab .mat-tab-labels {
+  display: block !important;
+}
+
+.inner-3rd-ab .mat-tab-labels:before {
+  display: none;
+}
+
+.inner-tab .mat-tab-labels:before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #44a3df;
+  position: absolute;
+  bottom: 0px;
+}
+
+.common-tabs .mat-tab-labels:before {
+  background-color: #fff;
+}
+
+.mat-tab-labels .mat-tab-label {
+  font-family: "Helvetica Neue MediumCond";
+  color: #000;
+  font-size: 16px;
+  opacity: 1 !important;
+  text-transform: uppercase !important;
+  background: transparent;
+  min-width: 50px;
+  padding: 0 15px;
+}
+
+.white-box .mat-tab-labels .mat-tab-label {
+  font-family: "Helvetica Neue Roman";
+  font-size: 12px;
+  line-height: 22.5px;
+  height: 24px;
+}
+
+.vertical-tab .mat-tab-labels .mat-tab-label {
+  font-family: "Helvetica Neue MediumCond";
+  display: block;
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  text-align: left;
+  line-height: 48px;
+  font-size: 16px;
+  height: 48px;
+  margin: 0;
+  white-space: unset;
+  padding-left: 20px;
+}
+
+.white-box .mat-tab-label::before {
+  display: none;
+}
+
+.mat-tab-label a {
+  display: block;
+  color: #000;
+  position: relative;
+}
+
+.inner-tab .mat-tab-label {
+  border: 1px solid transparent;
+  height: 30px;
+}
+
+.mat-tab-label a.active {
+  border: 0 none;
+}
+
+.demo-tab-group .mat-tab-label-active {
+  border-bottom: solid 4px #44a3df !important;
+}
+
+.mat-tab-label a.active:after {
+  content: "";
+  left: 0;
+  bottom: -14px;
+  position: absolute;
+  background-color: #44a3df !important;
+  height: 4px;
+  width: 100%;
+}
+
+.tab-slider-div .mat-tab-label::before {
+  font-family: "Material Icons";
+  content: "\E876";
+  margin-right: 7px;
+  color: #c1c1c1;
+  font-weight: 900;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}
+
+.inner-tab .mat-tab-label.mat-tab-label-active {
+  position: relative;
+  border: 1px solid #44a3df;
+  border-bottom-color: #f7f7f7;
+}
+
+.inner-tab .inner-3rd-ab .mat-tab-label.mat-tab-label-active {
+  border: 0 none;
+  border-bottom: 1px solid #44a3df;
+}
+
+.common-tabs .mat-tab-label.mat-tab-label-active {
+  border: none;
+  border-bottom: 1px solid #44a3df !important;
+}
+
+.inner-tab .mat-tab-label.mat-tab-label-active:after {
+  content: "";
+  height: 0px;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0px;
+}
+
+.inner-tab .mat-tab-label:first-child {
+  margin-left: 25px;
+}
+
+.inner-tab .inner-3rd-ab.vertical-tab .mat-tab-label:first-child {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.inner-tab .inner-3rd-ab.vertical-tab .mat-tab-label.mat-tab-label-active,
+.inner-tab .inner-3rd-ab.vertical-tab .mat-tab-label.mat-tab-label-active a {
+  background: #e7f0ff !important;
+  border: 0 none;
+  width: 100%;
+}
+.inner-tab .inner-3rd-ab.vertical-tab .mat-tab-label .mat-tab-label-content {
+  width: 100%;
+  display: block;
+}
+.inner-tab .mat-tab-body-wrapper {
+  overflow: visible !important;
+}
+
+.inner-ab .vertical-tab .mat-tab-body-wrapper {
+  display: table-cell !important;
+  width: 70%;
+  overflow: hidden !important;
+}
+
+.application-wrapper .mat-tab-body-wrapper,
+.application-wrapper .mat-tab-body.mat-tab-body-active {
+  position: static;
+}
+
+.inner-static-details-tab .mat-tab-body-wrapper {
+  padding: 6px;
+}
+
+.camSummary-tab .mat-tab-body-wrapper {
+  min-height: 500px;
+}
+
+.user-management-content .mat-tab-body-wrapper,
+.user-management-content .mat-tab-body.mat-tab-body-active {
+  overflow: visible;
+  max-width: 1900px;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 5px;
+}
+
+.inner-static-details-tab .mat-tab-body.mat-tab-body-active {
+  overflow-y: hidden;
+}
+
+.mat-tab-body-content {
+  height: auto !important;
+  overflow: visible !important;
+}
+
+.common-tabs .mat-tab-body-content {
+  padding: 0;
+}
+
+.mat-tab-body-content.ng-trigger.ng-trigger-translateTab {
+  pointer-events: all;
+}
+
+.white-box .mat-tab-body {
+  top: 100%;
+}
+
+.white-box .inner-3rd-ab .mat-tab-body {
+  padding: 0px !important;
+  overflow-y: hidden;
+  margin-top: 0;
+}
+
+.cam-tab .white-box .mat-tab-body {
+  margin-top: 0;
+}
+
+.mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #44a3df !important;
+  height: 4px;
+}
+
+.tab-slider-div .mat-tab-group.mat-primary .mat-ink-bar,
+.tab-slider-div .mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  display: none;
+}
+
+.inner-tab .mat-tab-group.mat-primary .mat-ink-bar {
+  position: absolute;
+  display: none;
+  background-color: #fff !important;
+  bottom: -1px;
+}
+
+.vertical-tab .mat-tab-group {
+  display: table !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* MAT Tabs  Ends */
+
+/* MAT Accordian  Starts */
+
+span.mat-expansion-indicator {
+  display: none !important;
+}
+
+.mat-expansion-panel-header-title i {
+  line-height: 21px;
+}
+
+.mat-expansion-panel-header-title span {
+  vertical-align: bottom;
+  display: inline-block;
+  letter-spacing: 0.4px;
+}
+
+.mat-expansion-panel-header-title {
+  color: #44a3df !important;
+}
+
+.mat-expansion-panel-header-description,
+.mat-expansion-panel-header-title {
+  align-items: center;
+  margin: 0 !important;
+  height: 30px;
+}
+
+.mat-expansion-panel-header-title p {
+  background: transparent;
+  color: #44a3df;
+  font-family: "Helvetica Neue MediumCond";
+  font-size: 16px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.mat-expansion-panel-header-title span {
+  vertical-align: middle;
+}
+
+.mat-expansion-panel-header-description {
+  display: none !important;
+}
+
+.mat-expanded .mat-expansion-panel-header-description {
+  flex-grow: 2;
+  text-align: right;
+  justify-content: right;
+  display: inline-block !important;
+}
+
+.mat-expansion-panel-header-description {
+  margin-right: 0 !important;
+  position: relative !important;
+}
+
+.mat-expanded > .mat-content .close-i {
+  display: none !important;
+}
+
+.mat-expanded > .mat-content .open-i {
+  display: inline-block !important;
+}
+
+.mat-expansion-panel {
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.mat-expansion-panel-spacing {
+  margin: 0 0 !important;
+}
+
+.mat-expansion-panel-header {
+  background: transparent !important;
+  display: block !important;
+  color: #44a3df !important;
+  font-family: "Helvetica Neue MediumCond" !important;
+  font-size: 16px !important;
+  border-bottom: 1px solid #e0e0e0 !important;
+  padding: 0 !important;
+  text-transform: uppercase !important;
+}
+
+.mat-expansion-panel-header:not([aria-disabled="true"]) {
+  cursor: pointer;
+}
+
+.mat-expanded .star-icon:before {
+  content: "remove";
+}
+
+.mat-expansion-panel-body {
+  padding: 20px 15px !important;
+}
+
+.p20 .mat-expansion-panel-body {
+  padding: 20px 0 !important;
+}
+
+.p20.borrower-details .mat-expansion-panel-body {
+  padding: 0px !important;
+}
+
+.fields-wrap .mat-expansion-panel-body {
+  padding: 0 15px !important;
+}
+
+mat-accordion.bank-section {
+  margin-top: 15px;
+  display: block;
+}
+
+/* MAT Accordian  Ends */
+
+/* MAT Select  Starts */
+
+.mat-form-field-hide-placeholder .mat-select-placeholder {
+  color: transparent;
+  transition: none;
+  font-size: 14px;
+  font-family: "Helvetica Neue Roman";
+}
+
+.mat-select-placeholder {
+  transition: color 0.4s 0.133s cubic-bezier(0.25, 0.8, 0.25, 1);
+  font-size: 16px;
+  color: #000;
+}
+
+.mat-select-arrow {
+  background: url(../images/down.svg) no-repeat right 90%;
+  color: rgb(68, 163, 223);
+  width: 12px !important;
+  height: 10px !important;
+  margin: 0 !important;
+  border: 0 none !important;
+}
+
+.mat-form-field-disabled .mat-select-arrow,
+.disabled .mat-select-arrow {
+  background-image: url(../images/gray-down.svg);
+}
+
+.mat-select-panel .mat-option.address-details {
+  white-space: unset;
+  overflow: visible;
+  width: 100%;
+  box-sizing: unset;
+  font-size: 14px;
+  line-height: 16px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/* MAT Select  Ends */
+
+/* MAT Dialog  Starts */
+
+.cdk-overlay-container .mat-dialog-container {
+  padding-top: 10px;
+}
+
+.mat-dialog-container .mat-dialog-content {
+  max-height: 82vh;
+}
+
+.mat-content {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: visible !important;
+}
+
+.mat-dialog-header {
+  padding-bottom: 35px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.mat-dialog-header h3 {
+  color: #44a3df;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.mat-dialog-header a {
+  position: absolute;
+  right: 0;
+  top: 0;
+  outline: none;
+}
+
+.mat-dialog-header mat-dialog-title {
+  font-family: "Helvetica Neue Roman";
+  font-size: 16px;
+}
+
+/* MAT Dialog  Ends */
+
+/* MAT ICON  Starts */
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}
+
+.theme-table td i.material-icons.f20 {
+  margin-right: 10px;
+}
+
+i.material-icons {
+  vertical-align: middle;
+}
+
+.edit-icon i.material-icons {
+  font-size: 17px;
+}
+
+.refresh i.material-icons {
+  font-size: 25px;
+  line-height: 20px;
+}
+
+.last-trigger i.material-icons {
+  color: #60b008;
+  font-size: 16px;
+}
+
+.last-trigger.error i.material-icons {
+  color: #d00821;
+}
+
+.divDeviation i.material-icons {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.mat-form-field-disabled mat-icon.mat-icon.material-icons {
+  filter: grayscale(100%);
+}
+
+.popover-close i.material-icons {
+  display: block;
+  font-size: 13px;
+  line-height: 13px;
+  height: auto;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 3px;
+  margin: 0;
+}
+
+.calendar-btn-group i.material-icons {
+  line-height: 1px;
+  font-size: 18px;
+}
+
+.btn-reject .material-icons {
+  font-size: 30px;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+.last-trigger.list-screening-tooltip i.material-icons.disabledrefreshbtn {
+  color: #c4c4c4;
+  font-size: 26px;
+}
+
+.last-trigger.list-screening-tooltip i.material-icons.enabledrefreshbtn {
+  color: #039be5;
+  font-size: 26px;
+}
+
+/* MAT ICON  Ends */
+
+/* MAT Datepicker  Starts */
+
+table .mat-datepicker-toggle .mat-icon {
+  margin-bottom: 5px;
+}
+
+.mat-datepicker-toggle button:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.mat-datepicker-toggle-default-icon {
+  width: 24px !important;
+  color: #44a3df !important;
+}
+
+.mat-datepicker-toggle .mat-icon {
+  color: #44a3df;
+  font-size: 28px !important;
+  margin-bottom: 10px;
+  margin-left: -4px;
+}
+
+/* MAT Datepicker  Ends */
+
+/* MAT Grid Starts */
+
+.mat-grid-tile {
+  overflow: inherit !important;
+}
+
+mat-grid-list.mat-grid-list {
+  padding-bottom: 0px !important;
+}
+
+mat-grid-tile.mat-grid-tile {
+  padding-top: 0px !important;
+}
+
+/* MAT Grid Ends */
+
+.mat-error {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.theme-table .mat-error {
+  margin-top: 6px;
+}
+
+.sub-title-wrap .mat-slide-toggle-content {
+  font-size: 16px;
+  font-family: "Helvetica Neue Roman" !important;
+}
+
+.mat-ink-bar {
+  transition: none !important;
+}
+
+.mtb10{
+  margin: 10px 0;
+}
+.mtb10 .mat-radio-button:first-child{
+  margin-bottom: 5px;
+}

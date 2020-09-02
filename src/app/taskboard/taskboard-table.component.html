@@ -1,0 +1,98 @@
+
+<div class="table-main-wrap">
+    <div class="table-wrap tablediv">
+        <table class="whitebg-table ">
+            <thead class="header-section">
+                <tr>
+                    <th class="book-id" (click)="sortHeaderClick(bookId)" [ngClass]="{ 'sorting': isSorting(bookId), 'sorting-asc': isSortAsc(bookId), 'sorting-desc': isSortDesc(bookId) }">
+                        <div class="col-content">Book Id</div>
+                    </th>
+                    <th class="cust-name" (click)="sortHeaderClick(bookName)" [ngClass]="{ 'sorting': isSorting(bookName), 'sorting-asc': isSortAsc(bookName), 'sorting-desc': isSortDesc(bookName) }">
+                        <div class="col-content">Book Name</div>
+                    </th>
+                    <th class="cust-name" (click)="sortHeaderClick(authorName)" [ngClass]="{ 'sorting': isSorting(authorName), 'sorting-asc': isSortAsc(authorName), 'sorting-desc': isSortDesc(authorName) }">
+                        <div class="col-content">Author Name</div>
+                    </th>
+                    <th class="book-id" *ngIf = "boardType == 'AllBooks'" (click)="sortHeaderClick(quantityAvialable)" [ngClass]="{ 'sorting': isSorting(quantityAvialable), 'sorting-asc': isSortAsc(quantityAvialable), 'sorting-desc': isSortDesc(quantityAvialable) }">
+                        <div class="col-content">Available</div>
+                    </th>
+                    <th class="book-id" *ngIf = "boardType == 'AllBooks'" (click)="sortHeaderClick(quantityBorrowed)" [ngClass]="{ 'sorting': isSorting(quantityBorrowed), 'sorting-asc': isSortAsc(quantityBorrowed), 'sorting-desc': isSortDesc(quantityBorrowed) }">
+                        <div class="col-content">Borrowed</div>
+                    </th>
+                    <th class="book-id" *ngIf = "boardType == 'AllBooks'"  (click)="sortHeaderClick(quantityTotal)" [ngClass]="{ 'sorting': isSorting(quantityTotal), 'sorting-asc': isSortAsc(quantityTotal), 'sorting-desc': isSortDesc(quantityTotal) }">
+                        <div class="col-content">Total Books</div>
+                    </th>
+                    <th class="book-id" *ngIf="boardType == 'BorrowedBooks'" (click)="sortHeaderClick(quantityTotal)" [ngClass]="{ 'sorting': isSorting(quantityTotal), 'sorting-asc': isSortAsc(quantityTotal), 'sorting-desc': isSortDesc(quantityTotal) }">
+                        <div class="col-content">Borrowed Date</div>
+                    </th>
+                    <th class="book-id" *ngIf="boardType == 'BorrowedBooks'" (click)="sortHeaderClick(quantityTotal)" [ngClass]="{ 'sorting': isSorting(quantityTotal), 'sorting-asc': isSortAsc(quantityTotal), 'sorting-desc': isSortDesc(quantityTotal) }">
+                        <div class="col-content">Due Date</div>
+                    </th>
+                    <th class="cust-name" *ngIf = "boardType != 'AllBooks'" >
+                        <div class="col-content">Action</div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody *ngIf="data && data.books && data.books.length" #scrollMe>
+                <tr *ngFor="let dashboard of data.books; let i = index">
+                    <td class = "book-id">
+                        <span class="last-trigger ">
+                            <div class="col-content" [matTooltip]="dashboard.bookId">{{dashboard.bookId}}</div>
+                        </span>
+                    </td>
+                    <td>
+                        <span class="last-trigger">
+                            <div class="cust-name col-content" [matTooltip]="dashboard.bookName">{{dashboard.bookName}}</div>
+                        </span>
+                    </td>
+                    <td>
+                        <span class="last-trigger">
+                            <div class="cust-name col-content" [matTooltip]="dashboard.authorName" form>{{dashboard.authorName}}</div>
+                        </span>
+                    </td>
+                    <td *ngIf = "boardType == 'AllBooks'" class = "book-id">
+                        <span class="last-trigger">
+                            <div class="cust-name col-content" [matTooltip]="dashboard.quantityAvailable" form>{{dashboard.quantityAvailable}}</div>
+                        </span>
+                    </td>
+                    <td *ngIf = "boardType == 'AllBooks'" class = "book-id">
+                        <span class="last-trigger">
+                            <div class="cust-name col-content" [matTooltip]="dashboard.quantityBorrowed">{{dashboard.quantityBorrowed}}</div>
+                        </span>
+                    </td>
+                    <td *ngIf = "boardType == 'AllBooks'" class = "book-id">
+                        <span class="last-trigger">
+                            <div class="cust-name col-content" [matTooltip]="dashboard.quantityTotal">{{dashboard.quantityAvailable + dashboard.quantityBorrowed}}</div>
+                        </span>
+                    </td>
+                    <td *ngIf="boardType == 'BorrowedBooks'" class="book-id">
+                        <span class="last-trigger">
+                            <div class="cust-name col-content" [matTooltip]="dashboard.borrowedOn">{{dashboard.borrowedOn}}</div>
+                        </span>
+                    </td>
+                    <td *ngIf="boardType == 'BorrowedBooks'" class="book-id">
+                        <span class="last-trigger">
+                            <div class="cust-name col-content" [matTooltip]="dashboard.dueDate">{{dashboard.dueDate}}</div>
+                        </span>
+                    </td>
+                    <td *ngIf="boardType == 'AvailableBooks' && checkIfNotAdded(dashboard)" class="cust-name">
+                        <span class="last-trigger">
+                            <button mat-raised-button type="submit" class="black-btn btn-borrow" (click)="addBookToBorrow(dashboard)"  [disabled]="this.cache.user.roleId == 1" [innerHTML]="'dashboard.btn-borrow' | translate"></button>
+                        </span>
+                    </td>
+                    <td *ngIf="boardType == 'AvailableBooks' && !checkIfNotAdded(dashboard)" class="cust-name">
+                        <span class="last-trigger">
+                            <button mat-raised-button type="submit" class="black-btn btn-remove" (click)="removeBookFromBorrow(dashboard)"  [disabled]="this.cache.user.roleId == 1" [innerHTML]="'dashboard.btn-remove' | translate"></button>
+                        </span>
+                    </td>
+                    <td *ngIf="boardType == 'BorrowedBooks'" class="cust-name">
+                        <span class="last-trigger">
+                            <button mat-raised-button type="submit" class="black-btn btn-remove" (click)="returnBook(dashboard.bookId)"  [innerHTML]="'dashboard.btn-return' | translate"></button>
+                            <app-loader *ngIf="newBookLoader" [type]="1"></app-loader>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+<div class="taskboard-wrapper">
+    <div>
+        <div class="search-bar" [class.active]="searchValue">
+            <div matTooltip="Search books by Name or Author">
+                <input type="text" placeholder="Search books by Name or Author" (keyup)="resetTaskBoard()" [(ngModel)]="searchBooks" (keydown.enter)="getDashboard()">
+                <span class="search-icon"><i class="material-icons">search</i></span>
+                <button *ngIf="searchBooks" type="button" class="close popover-close" (click)="clearSearch()">
+                    <i class="material-icons">close</i></button>
+            </div>
+        </div>
+        <div class="subheader">
+        <div class="subheader-full">
+
+        </div>
+                
+            <div class="subheader-right">
+                <button type="button" class="btn" *ngIf="cache.user.roleId == 1" (click)="newBook = !newBook" [innerHTML]="'grid_common.lbl_add_new_book' | translate"></button>
+                <button class="btn" mat-raised-button [matBadge]="getBorrowedBookCount()" matBadgePosition = "before" matBadgeColor = "warn" type="button" *ngIf="cache.user.roleId == 2 && selectedTabIndex == 1" [disabled]="disableCheckout()" (click)="checkoutBorrowedBooks()" >Checkout</button>
+                <app-loader *ngIf="newBookLoader" [type]="1"></app-loader>
+                
+                <div *ngIf="newBook" [formGroup]="newBookFormGroup" class="popover-content newbook-content">
+                    <div class="popover-header">
+                        <h5 class="popover-title" [innerHTML]="'grid_common.lbl_add_new_book' | translate"></h5>
+                        <button type="button" class="close popover-close" (click)="newBook = false"><i class="material-icons">close</i></button>
+                    </div>
+                    <div class="popover-body mat-expansion-panel-body">
+                        <form class="login-form" [formGroup]="newBookFormGroup">
+                            <mat-form-field class="errorWrap">
+                                <input [errorStateMatcher]="parentErrorStateMatcher"  type="text" autocomplete="off" aria-label="Number" matInput [matAutocomplete]="auto" formControlName="bookName" [placeholder]="'dashboard.ph-book-name' | translate">
+                                <mat-autocomplete #auto="matAutocomplete">
+                                    <mat-option *ngFor="let option of filteredBooks" (onSelectionChange)="onChanges(option,$event)"  [value]="option.bookName">
+                                        {{option.bookName}}
+                                    </mat-option>
+                                </mat-autocomplete>
+                                <mat-error *ngIf="newBookFormGroup.get('bookName').touched && newBookFormGroup.get('bookName').errors && newBookFormGroup.get('bookName').errors.required" [innerHTML]="'error.err-req-book-name' | translate"></mat-error>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input [errorStateMatcher]="parentErrorStateMatcher" matInput [placeholder]="'dashboard.ph-author-name' | translate" type="text" autocomplete="off" alphaNumericWithSpecialsAndSpaceOnly formControlName="authorName">
+                            </mat-form-field>
+
+                            <mat-form-field class="errorWrap">
+                                <input [errorStateMatcher]="parentErrorStateMatcher" type="text" autocomplete="off" aria-label="Number" matInput numberOnly formControlName="quantityAvailable" [placeholder]="'dashboard.ph-quantity' | translate">
+                                <mat-error *ngIf="newBookFormGroup.get('quantityAvailable').touched && newBookFormGroup.get('quantityAvailable').errors && newBookFormGroup.get('quantityAvailable').errors.required" [innerHTML]="'error.err-req-quantity' | translate"></mat-error>
+                                <mat-error *ngIf="newBookFormGroup.get('quantityAvailable').touched && newBookFormGroup.get('quantityAvailable') < 0" [innerHTML]="'error.err-min-quantity' | translate"></mat-error>
+                            </mat-form-field>
+                            <div class="btn-wrap loader">
+                                <button type="button" class="btn" [disabled]="!newBookFormGroup.valid || newBookLoader" (click)="addNewBook();" [innerHTML]="'grid_common.btn_new_book' | translate"></button>
+                                <app-loader *ngIf="newBookLoader" [type]="0"></app-loader>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <mat-tab-group [selectedIndex]="selectedTabIndex" (selectedTabChange)="tabChanged($event)" [@.disabled]="true" [disableRipple]="true">
+            <mat-tab *ngIf = "cache.user.roleId ==1">
+                <ng-template mat-tab-label>
+                    All Books <span *ngIf="taskboardData && selectedTabIndex == 0">({{ taskboardData.totalNumberRecords }})</span>
+                </ng-template>
+                <app-taskboard *ngIf="selectedTabIndex == 0" [data]="taskboardData" [boardType]="'AllBooks'" (onScroll)="onScrollEnd($event)"></app-taskboard>
+            </mat-tab>
+            <mat-tab *ngIf="cache.user.roleId == 2">
+                <ng-template mat-tab-label>
+                    Borrowed Books<span *ngIf="taskboardData && selectedTabIndex == 0">({{ taskboardData.totalNumberRecords }})</span>
+                </ng-template>
+                <app-taskboard *ngIf="selectedTabIndex == 0" [data]="taskboardData" [boardType]="'BorrowedBooks'" (onScroll)="onScrollEnd($event)"></app-taskboard>
+            </mat-tab>
+            <mat-tab>
+                <ng-template mat-tab-label>
+                    Available Books<span *ngIf="taskboardData && selectedTabIndex == 1">({{ taskboardData.totalNumberRecords }})</span>
+                </ng-template>
+                <app-taskboard *ngIf="selectedTabIndex == 1" [data]="taskboardData" [boardType]="'AvailableBooks'" (onScroll)="onScrollEnd($event)"></app-taskboard>
+            </mat-tab>
+        </mat-tab-group>
+
+        <div class="text-center" *ngIf="!taskboardData && !dataLoader">
+            <p>{{message}}</p>
+        </div>
+    </div>
+    <div class="loading-icon" *ngIf="dataLoader">
+        <img src="assets/images/img_loading.gif">
+    </div>
+</div>

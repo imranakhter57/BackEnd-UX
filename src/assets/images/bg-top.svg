@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="100px" viewBox="0 0 20 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+	<title>
+		Desktop
+	</title>
+	<desc>
+		Created with Sketch.
+	</desc>
+	<defs>
+		<linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+			<stop stop-color="#F2F2F2" offset="0%">
+			</stop>
+			<stop stop-color="#FFFFFF" offset="100%">
+			</stop>
+		</linearGradient>
+	</defs>
+	<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		<rect fill="#FFFFFF" x="0" y="0" width="20" height="100">
+		</rect>
+		<rect id="Rectangle-12" fill="url(#linearGradient-1)" fill-rule="nonzero" x="-14" y="1" width="47" height="68">
+		</rect>
+	</g>
+</svg>

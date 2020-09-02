@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="-5 -5 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55 (78076) - https://sketchapp.com -->
+    <title>ico-rule</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="A4" transform="translate(-1265.000000, -586.000000)" fill="#fff" fill-rule="nonzero">
+            <g id="Angular-BPMN-+-Rectangle-+-ico-algorithm-+-ico-rule-+-ico-score-+-ico-support-+-ico-decision-tree-+-ico-decision-table-+-ico-variables-Mask" transform="translate(1132.000000, 163.000000)">
+                <g id="ico-rule" transform="translate(133.000000, 423.000000)">
+                    <polygon id="Path" points="19.1130702 11.7555844 19.1130702 19.8428009 3.32965351 19.8428009 3.32965351 3.69683844 16.4213298 3.69683844 16.4213298 0.996642563 0.724505686 0.996642563 0.724505686 22.5429968 21.7182181 22.5429968 21.7182181 11.7555844"></polygon>
+                    <polygon id="Path" points="22.966111 0.655084668 12.9548843 10.930292 9.0166796 6.88845034 6.46524147 9.50694371 12.9548843 16.1671908 25.5177204 3.2736659"></polygon>
+                    <polygon id="Path" points="19.1130702 36.7456366 19.1130702 44.8330288 3.32965351 44.8330288 3.32965351 28.6870664 16.4213298 28.6870664 16.4213298 25.9868705 0.724505686 25.9868705 0.724505686 47.5332247 21.7182181 47.5332247 21.7182181 36.7456366"></polygon>
+                    <polygon id="Path" points="22.966111 25.6170178 12.9548843 35.9205199 9.0166796 31.8785904 6.46524147 34.4974352 12.9548843 41.1576824 25.5177204 28.2354233"></polygon>
+                    <rect id="Rectangle" x="26.8484067" y="13.6983799" width="13.9216054" height="2"></rect>
+                    <rect id="Rectangle" x="26.8484067" y="18.8430645" width="20.883093" height="2"></rect>
+                    <rect id="Rectangle-Copy-4" x="26.8484067" y="38.9615378" width="7.52479371" height="2"></rect>
+                    <rect id="Rectangle-Copy-3" x="26.8484067" y="44.1062224" width="20.883093" height="2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

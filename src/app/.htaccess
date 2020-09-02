@@ -1,0 +1,15 @@
+ErrorDocument 400 /400
+ErrorDocument 401 /401
+ErrorDocument 403 /403
+ErrorDocument 404 /404
+ErrorDocument 500 /500
+
+RewriteEngine On
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+RewriteRule ^ /index.html
+
+Header set X-Frame-Options SAMEORIGIN
+ServerSignature Off
+Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS

@@ -1,0 +1,36 @@
+{
+
+    "err_required": "This is required.",
+    "delete_confirmation": "Are you sure you want to remove/delete this item ?",
+    "grid_common": {
+        "btn_new_book": "Add / Update Book",
+        "lbl_add_new_book": "Add / Update Book",
+        "btn_checkout": "Checkout"
+                
+    },
+    "grid_login": {
+        "heading_1": "Library Management System",
+        "heading_2": "Platform to manage your LIBRARY.",
+        "client_name" :"Hexad",
+        "lbl_user_name": "User Name",
+        "lbl_password": "Password",
+        "err_username_required": "Username is required.",
+        "err_password_required": "Password is required.",
+        "btn_login": "Login"
+    
+    },
+    "dashboard": {
+        "thankyou-heading": " Thank You",
+        "ph-book-name": "Name of the book*",
+        "ph-author-name": "Author of the book",
+        "ph-quantity": "Quantity of the book*",
+        "btn-borrow" : "Borrow",
+        "btn-remove": "Remove",
+        "btn-return": "Return Book"
+    },
+    "error": {
+        "err-req-book-name": "Book name is mandatory.",
+        "err-req-quantity": "Quantity is mandatory.",
+        "err-min-quantity": "Quantity cannot be less than 0."
+    }
+}

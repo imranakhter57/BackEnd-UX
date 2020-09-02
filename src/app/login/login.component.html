@@ -1,0 +1,32 @@
+<section class="login-section">
+    <div class="login-left">
+        <div class="login-content">
+            <h6 [innerHTML]="'grid_login.heading_1' | translate"></h6>
+            <h3 [innerHTML]="'grid_login.heading_2' | translate"></h3>
+        </div>
+    </div>
+    <div class="login-right">
+        <form class="login-form clearfix" [formGroup]="loginFormGroup">
+            <div >
+                <mat-form-field>
+                    <input matInput [errorStateMatcher]="formSubmittedMatcher" alphaNumericOnly length="30" [placeholder]="'grid_login.lbl_user_name' | translate" name="jname" autocomplete="off" formControlName="jname" required>
+                    <mat-error *ngIf="loginFormGroup.get('jname').errors" [innerHTML]="'grid_login.err_username_required' | translate"></mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput [errorStateMatcher]="formSubmittedMatcher" length="30" [placeholder]="'grid_login.lbl_password' | translate" type="password" name="jpassword" autocomplete="off" formControlName="jpassword" required>
+                    <mat-error *ngIf="loginFormGroup.get('jpassword').errors" [innerHTML]="'grid_login.err_password_required' | translate"></mat-error>
+                </mat-form-field>
+            </div>
+            <div class="right-btn">
+                <div class="loader">
+                    <app-loader *ngIf="formSubmitted" class="loading" [type]="0"></app-loader>
+                </div>
+
+                <button type="submit"  (click)="login()" class="btn">
+                    <span [innerHTML]="'grid_login.btn_login' | translate"></span>
+                </button>
+            </div>
+        </form>
+    
+    </div>
+</section>

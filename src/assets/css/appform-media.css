@@ -1,0 +1,220 @@
+@media only screen and (max-width: 1345px) {
+  .section-img img {
+    max-width: 100%;
+  }
+
+  .fullview-nav {
+    flex-direction: column;
+  }
+
+  .view-list {
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .view-list li.active:after {
+    bottom: -8px !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .doc-name .buttons-view {
+    width: 95px;
+  }
+  .doc-name > span {
+    width: calc(100% - 100px);
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .form-col {
+    width: calc(50% - 12px);
+  }
+
+  .view-btn {
+    padding: 3px 20px;
+  }
+
+  .congrats-wrap {
+    padding-top: 75px;
+  }
+
+  .page-title {
+    font-size: 20px;
+    line-height: 26px;
+    top: -62px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .congrats-wrap {
+    padding-top: 85px;
+  }
+
+  .congrats-msg {
+    font-size: 16px;
+    line-height: 22px;
+    top: 70px;
+  }
+
+  .fullview-congrats {
+    font-size: 16px;
+    line-height: 22px;
+    top: 85px;
+  }
+
+  .form-row {
+    display: block;
+  }
+
+  .form-col {
+    width: 100%;
+  }
+
+  .group-header {
+    padding: 8px 15px;
+  }
+
+  .group-title,
+  .mat-form-field {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .sub-title-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sub-title-wrap .mat-slide-toggle {
+    margin-top: 10px;
+  }
+
+  .message-block {
+    bottom: 35px;
+  }
+
+  .add-new-btn {
+    font-size: 13px;
+    padding: 0 7px !important;
+  }
+
+  .mat-error {
+    top: 0;
+  }
+
+  .resume-inner-wrap {
+    width: 680px;
+    overflow-x: scroll;
+  }
+
+  .white-box .retriveWrap .retrivebtn {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .users-item span {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  .view-list,
+  .static-nav-list {
+    text-align: left;
+  }
+
+  .view-list li,
+  .static-nav-list li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .static-nav-list span {
+    border: 0 none;
+    padding: 0;
+  }
+
+  .view-list li.active:after {
+    width: 106px;
+    bottom: -5px !important;
+  }
+
+  .view-list li a {
+    border: 0 none;
+    padding: 0;
+  }
+
+  .page-title {
+    right: 15px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .view-btn-title {
+    top: -63px !important;
+  }
+
+  .fullview-nav {
+    display: block;
+  }
+
+  .message-block {
+    max-width: 50px;
+    right: 5px;
+  }
+
+  .btn-row {
+    flex-direction: column;
+  }
+
+  .btn-row .btn-col {
+    width: 100%;
+  }
+
+  .btn-row .btn-col:first-child {
+    border-right: 0 none;
+    margin-bottom: 15px;
+  }
+
+  .fullview-congrats {
+    top: 163px;
+  }
+
+  .congrats-msg {
+    top: 160px;
+  }
+
+  .mat-expansion-panel-header-title p {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .page-title {
+    top: -66px;
+  }
+
+  .add-row-btn .transparent-btn {
+    margin: 0 10px 10px !important;
+    min-width: 200px;
+  }
+
+  .add-row-btn .transparent-btn:last-child {
+    margin-bottom: 0 !important;
+  }
+}
