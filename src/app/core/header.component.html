@@ -1,8 +1,5 @@
 <header class="site-header">
-    <div class="logo-wrap">
-        <img class = "client-logo" src="assets/images/client-logo.png">
-        <h3 class ="client" [innerHTML]="'grid_login.client_name' | translate"></h3>
-    </div>
+   
     <div class="user-wrap" *ngIf="cache.loggedIn">
         <div class="dropdown-wrap">
             <button type="button" class="current-user" [mdePopoverTriggerFor]="userPopover" mdePopoverTriggerOn="click">{{cache.user.userFullName}}</button>
