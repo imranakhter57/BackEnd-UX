@@ -23,12 +23,6 @@ There are 2 types of user for this application.
 	As a borrower, you can see the books that you have borrowed and books that are available in library that you can borrow.
 	To login as borrower, UserName = borrower or borrower2 and Password = Password123
 
-I have completed the assignments and tried to write relevant unit test cases but due to time constraint cannot complete it,
-as I can only do this project in 2 weekend days as I have to work on weekdays. 
-
-Please dont judge based on unit test as I explained above. 
-
-I have tried to develop a usable applcation.
 
 
 
